@@ -1,14 +1,4 @@
-/*b) BEST FIT MEMORY ALLOCATION 
- 
-AIM 
-To allocate memory using the Best Fit strategy. 
- 
-ALGORITHM 
-1. Choose the smallest block that fits the process. 
-2. Allocate memory and update block size. 
-3. Display results. 
- 
-SOURCE CODE */
+
 #include <stdio.h> 
 int main() { 
     int nb, np, i, j; 
@@ -48,22 +38,3 @@ int main() {
     } 
     return 0; 
 } 
- 
-/*SAMPLE INPUT 
-Enter number of blocks: 5 
-Enter block sizes: 
-100 500 200 300 600 
-Enter number of processes: 4 
-Enter process sizes: 
-212 417 112 426 
-SAMPLE OUTPUT 
-Process Size Block 
-P1      212  B4 
-P2      417  B2 
-P3      112  B3 
-P4      426  B5 
- 
- 
- 
-RESULT 
-Thus, memory was allocated using the Best Fit method.*/ 
