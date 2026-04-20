@@ -1,16 +1,4 @@
-/*c) Shortest Job First (SJF – Non-Preemptive) 
  
-Aim 
-To implement the Shortest Job First CPU scheduling algorithm. 
- 
-Algorithm 
-1. Read number of processes. 
-2. Read burst times. 
-3. Sort processes based on burst time. 
-4. Calculate waiting time and turnaround time. 
-5. Display results. 
- 
-Source Code*/ 
 #include <stdio.h> 
 int main() { 
     int n, i, j; 
@@ -39,18 +27,3 @@ int main() {
         printf("P%d\t%d\t%d\t%d\n", i+1, bt[i], wt[i], tat[i]); 
     return 0; 
 } 
- 
- 
-/*Sample Input 
-Enter number of processes: 3 
-Enter burst times: 
-6 2 8 
-Sample Output 
-Process BT WT TAT 
-P1      2  0  2 
-P2      6  2  8 
-P3      8  8  16 
- 
- 
-Result 
-Thus, the Shortest Job First scheduling algorithm was implemented successfully.*/ 
