@@ -1,22 +1,4 @@
-/*AIM: 
-To write and execute a C program to avoid deadlock using Banker’s Algorithm and to 
-determine whether the system is in a safe state. 
  
-DESCRIPTION 
-Banker’s Algorithm is a deadlock avoidance algorithm that checks for safe resource 
-allocation. It ensures that the system allocates resources only if the allocation leads to a safe state, 
-thereby preventing deadlock. 
- 
-ALGORITHM 
-1. Read number of processes and number of resources. 
-2. Read allocation matrix. 
-3. Read maximum requirement matrix. 
-4. Read available resources. 
-5. Calculate the need matrix. 
-6. Find a safe sequence of execution. 
-7. Display whether the system is in a safe state. 
- 
-SOURCE CODE*/ 
 #include <stdio.h> 
 int main() { 
     int n, m, i, j, k; 
@@ -77,39 +59,3 @@ int main() {
     return 0; 
 } 
  
- 
-/*EXECUTION PROCEDURE 
-1. Open terminal. 
-2. Create a file using vi banker.c. 
-3. Compile the program using gcc banker.c. 
-4. Execute the program using ./a.out. 
-5. Enter the required input values. 
- 
-SAMPLE INPUT 
-Enter number of processes: 5 
-Enter number of resources: 3 
- 
-Allocation Matrix: 
-0 1 0 
-2 0 0 
-3 0 2 
-2 1 1 
-0 0 2 
-Maximum Matrix: 
-7 5 3 
-3 2 2 
-9 0 2  
-2 2 2 
-4 3 3 
- 
-Available Resources: 
-3 3 2 
- 
-SAMPLE OUTPUT 
-System is in SAFE state. 
-Safe sequence: P1 P3 P4 P0 P2 
- 
- 
-RESULT 
-Thus, deadlock was successfully avoided using Banker’s Algorithm and the system was found to 
-be in a safe state.*/
