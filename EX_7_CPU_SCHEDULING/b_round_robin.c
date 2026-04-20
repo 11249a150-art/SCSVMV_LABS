@@ -1,16 +1,4 @@
-/*b) Round Robin Scheduling Algorithm 
- 
-Aim 
-To implement the Round Robin CPU scheduling algorithm. 
- 
-Algorithm 
-1. Read number of processes and burst time. 
-2. Read time quantum. 
-3. Execute each process for a fixed time slice. 
-4. Calculate waiting time and turnaround time. 
-5. Display results. 
- 
-Source Code*/ 
+
 #include <stdio.h> 
 int main() { 
     int n, tq, i, time = 0; 
@@ -49,18 +37,3 @@ int main() {
         printf("P%d\t%d\t%d\t%d\n", i+1, bt[i], wt[i], tat[i]); 
     return 0; 
 } 
- 
-/*Sample Input 
-Enter number of processes: 3 
-Enter burst times: 
-10 5 8 
-Enter time quantum: 2 
-Sample Output 
-Process BT WT TAT 
-P1      10 13 23 
-P2      5  8  13 
-P3      8  10 18 
- 
- 
-Result 
-Thus, Round Robin scheduling algorithm was implemented successfully.*/
