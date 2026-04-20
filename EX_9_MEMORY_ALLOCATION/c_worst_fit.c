@@ -1,14 +1,4 @@
-/*c) WORST FIT MEMORY ALLOCATION 
  
-AIM 
-To allocate memory using the Worst Fit strategy. 
- 
-ALGORITHM 
-1. Choose the largest available block. 
-2. Allocate memory. 
-3. Display results. 
- 
-SOURCE CODE */ 
 #include <stdio.h> 
 int main() { 
     int nb, np, i, j; 
@@ -48,22 +38,3 @@ int main() {
     } 
     return 0; 
 } 
- 
-/*SAMPLE INPUT 
-Enter number of blocks: 5 
-Enter block sizes: 
-100 500 200 300 600 
-Enter number of processes: 4 
-Enter process sizes: 
-212 417 112 426 
- 
-SAMPLE OUTPUT 
-Process Size Block 
-P1      212  B5 
-P2      417  B2 
-P3      112  B5 
-P4      426  Not Allocated 
- 
- 
-RESULT 
-Thus, memory was allocated using the Worst Fit method.*/
