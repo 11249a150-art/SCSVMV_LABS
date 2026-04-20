@@ -1,13 +1,4 @@
-/*b) Program using wait() System Call 
 
-Aim 
-To demonstrate parent–child synchronization using wait(). 
- 
-Algorithm 
-1. Create a child process using fork(). 
-2. Parent waits until child completes execution. 
-3. Display process termination message. */
- 
 //Source Code 
 #include <stdio.h> 
 #include <sys/types.h> 
@@ -23,7 +14,3 @@ int main() {
     } 
     return 0; 
 } 
- 
- 
-/*Result 
-Thus, the parent process waited successfully for the child using wait().*/
