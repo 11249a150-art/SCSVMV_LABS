@@ -1,7 +1,3 @@
-/*Aim of Fibonacci (Recursion):
-
- To generate the Fibonacci sequence by defining each term in terms of its previous two terms using recursive function calls.*/
-
 
 1. #include <stdio.h> 
 2.  

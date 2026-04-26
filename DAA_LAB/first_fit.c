@@ -1,7 +1,3 @@
-/*Aim of First Fit:
-
-To allocate a process to the first available memory block that is large enough to hold it.*/
-
 
 1. #include <stdio.h> 
 2. void firstFit(int items[], int n, int capacity) 

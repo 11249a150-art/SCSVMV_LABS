@@ -1,5 +1,3 @@
-/*aim:
-To find a solution that is close to optimal (minimum cost or size) when an exact solution is too expensive to compute.*/
 
 1. #include <stdio.h> 
 2. #define V 5 // Number of vertices in our graph 

@@ -1,7 +1,3 @@
-/*Aim of Dijkstra's Algorithm:
-
-To find the shortest path from a source vertex to all other vertices in a weighted graph with non-negative edge weights.*/
-
 
 1. #include <stdio.h> 
 2. #define V 5 

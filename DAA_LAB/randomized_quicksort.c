@@ -1,8 +1,4 @@
 
-/*Aim of Randomized Quicksort:
-
- To sort a list of elements efficiently by randomly selecting a pivot and reducing the chances of worst-case performance.*/
-
 1. #include <stdio.h> 
 2. #include <stdlib.h> 
 3. #include <time.h> 
