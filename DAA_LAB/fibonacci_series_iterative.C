@@ -1,3 +1,8 @@
+/*Aim of Fibonacci (Iterative Method):
+
+To compute the Fibonacci sequence efficiently using a loop instead of recursion.*/
+
+
 #include<stdio.h>
 
 int fib(int n)

@@ -1,3 +1,8 @@
+/*Aim of Fractional Knapsack Problem:
+
+👉 To maximize the total profit by selecting items such that the total weight does not exceed the capacity, allowing fractions of items to be taken.*/
+
+
 1. #include <stdio.h> 
 2.  
 3. struct Item 

@@ -1,3 +1,8 @@
+/*Aim of Tower of Hanoi:
+
+To move all disks from a source peg to a destination peg using an auxiliary peg, following specific rules.*/
+
+
 1. #include <stdio.h> 
 2.  
 3. /** 

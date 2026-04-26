@@ -1,3 +1,8 @@
+/*Aim of Kruskal's Algorithm:
+
+To find a minimum spanning tree (MST) of a connected weighted graph with the least total edge weight.*/
+
+
 #include <stdio.h> 
 #define V 5 
 #define E 6 

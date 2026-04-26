@@ -1,3 +1,7 @@
+/*Aim of Prim's Algorithm:
+
+👉 To find a minimum spanning tree (MST) of a connected weighted graph by growing the tree from a starting vertex with the least total cost.*/
+
 #include <stdio.h> 
 #include <stdlib.h> 
 #define V 5 // Number of vertices 

@@ -1,3 +1,8 @@
+/*Aim of Best Fit:
+
+ To allocate a process (or item) to the smallest available block that is sufficient to hold it.*/
+
+
 1. #include <stdio.h> 
 2. void bestFit(int items[], int n, int capacity) 
 3. { 

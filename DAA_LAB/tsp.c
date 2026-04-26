@@ -1,4 +1,9 @@
- #include <stdio.h> 
+/*Aim of Travelling Salesman Problem (TSP):
+
+To find the shortest possible route that visits each city exactly once and returns to the starting city*/
+
+
+#include <stdio.h> 
 2. #define MAXN 15 
 3.  
 4. // Used to initialize minCost to a very large value. 
