@@ -1,0 +1,19 @@
+-- Views, sequences, indexes, and savepoints
+BEGIN EXECUTE IMMEDIATE 'DROP VIEW Student_Exp7_View'; EXCEPTION WHEN OTHERS THEN NULL; END;
+/
+BEGIN EXECUTE IMMEDIATE 'DROP TABLE Student_Exp7 PURGE'; EXCEPTION WHEN OTHERS THEN NULL; END;
+/
+BEGIN EXECUTE IMMEDIATE 'DROP SEQUENCE Student_Exp7_Seq'; EXCEPTION WHEN OTHERS THEN NULL; END;
+/
+CREATE TABLE Student_Exp7 (StudentID NUMBER PRIMARY KEY, StudentName VARCHAR2(50), Department VARCHAR2(30), CGPA NUMBER(3,2));
+CREATE SEQUENCE Student_Exp7_Seq START WITH 101 INCREMENT BY 1;
+INSERT INTO Student_Exp7 VALUES (Student_Exp7_Seq.NEXTVAL, 'Anu', 'CSE', 8.90);
+INSERT INTO Student_Exp7 VALUES (Student_Exp7_Seq.NEXTVAL, 'Bala', 'ECE', 8.50);
+INSERT INTO Student_Exp7 VALUES (Student_Exp7_Seq.NEXTVAL, 'Charles', 'IT', 9.10);
+CREATE INDEX idx_student_exp7_department ON Student_Exp7(Department);
+CREATE OR REPLACE VIEW Student_Exp7_View AS SELECT StudentID, StudentName, CGPA FROM Student_Exp7 WHERE CGPA >= 8.80;
+SAVEPOINT before_update;
+UPDATE Student_Exp7 SET CGPA = CGPA + 0.10 WHERE Department = 'CSE';
+ROLLBACK TO before_update;
+SELECT * FROM Student_Exp7_View ORDER BY StudentID;
+COMMIT;

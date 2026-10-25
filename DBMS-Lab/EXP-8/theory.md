@@ -1,0 +1,3 @@
+# Experiment 8: Normalization
+
+The unnormalized relation contains repeating student-course data. Its dependencies are `StudentID -> StudentName`, `CourseID -> CourseName, Instructor`, and `(StudentID, CourseID)` as the enrollment key. Decomposing into Student, Course, and Enrollment removes partial and transitive dependencies, giving 3NF. 4NF and 5NF are considered when independent multivalued facts or join dependencies remain.

@@ -1,0 +1,23 @@
+CREATE TABLE Student
+(
+    StudentID NUMBER PRIMARY KEY,
+    StudentName VARCHAR2(30),
+    Department VARCHAR2(20),
+    Age NUMBER,
+    CGPA NUMBER(3,2)
+);
+
+INSERT INTO Student VALUES (101,'Anu','CSE',20,8.90);
+INSERT INTO Student VALUES (102,'Bala','ECE',21,8.50);
+INSERT INTO Student VALUES (103,'Charles','IT',20,9.10);
+INSERT INTO Student VALUES (104,'Divya','CSE',22,8.70);
+INSERT INTO Student VALUES (105,'Esha','AIDS',21,9.20);
+
+COMMIT;
+
+SELECT * FROM Student;
+SELECT * FROM Student WHERE Department='CSE';
+SELECT * FROM Student WHERE CGPA > 8.8;
+SELECT * FROM Student ORDER BY CGPA DESC;
+SELECT COUNT(*) AS TotalStudents FROM Student;
+SELECT AVG(CGPA) AS Average_CGPA FROM Student;
